@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+$sidebar-width: 20rem;
+$sidebar-padding-hoz: 1.5rem;
+$sidebar-padding-ver: 2rem; 
+$sidebar-element-gap: 2rem;
+$sidebar-border: 1px solid $typo-color-100;
+
+$sidebar-logo-width: 9rem;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: $sidebar-element-gap;
+  align-items: start;
+
+  width: $sidebar-width;
+  height: 100vh;
+  
+  padding: $sidebar-padding-ver $sidebar-padding-hoz;
+
+  border-right: $sidebar-border;
+
+  & #logo{
+    width: $sidebar-logo-width;
+    height: auto;
+  }
+}

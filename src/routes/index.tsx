@@ -1,14 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import '../styles/main.scss'
+import Dashboard from '../pages/dashboard'
 
 export const Route = createFileRoute('/')({
-  component: Index,
+  component: Dashboard,
 })
-
-function Index() {
-  return (
-    <div className="p-2">
-      <h3 className=''></h3>
-    </div>
-  )
-}

@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 @function spToRem($sps){
   @return $sps * $conversionRatioSpToRemWeb;
 };
@@ -5,5 +7,5 @@
   @return $rems * $conversionRatioRemToPxWeb;
 };
 @function spacing($tracking, $px){
-  @return $tracking / $px;
+  @return calc($tracking / $px);
 };

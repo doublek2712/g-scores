@@ -1,3 +1,4 @@
+@charset 'utf-8';
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == 'large' {

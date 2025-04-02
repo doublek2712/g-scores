@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+.nav-item{
+  $size: 1.25rem;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+
+  border-radius: $border-radius-md;
+
+  color: $typo-color-900;
+  @extend .t-body-md;
+
+  &>svg{
+    display: inline-block;
+    width: $size;
+    height: $size;
+  }
+
+  &:hover{
+    background-color: rgba($typo-color-600, 0.1);
+    cursor: pointer;
+  }
+
+  &.nav-active{
+    background-color: rgba($primary-color-600, 0.1);
+    color: $primary-color-600;
+  }
+}

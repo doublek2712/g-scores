@@ -1,3 +1,4 @@
+@charset 'utf-8';
 /* Color styles */
 $base-color-light: rgba(255, 255, 255, 1);
 $base-color-dark: rgba(21, 23, 24, 1);
@@ -27,28 +28,39 @@ $secondary-color-900: rgba(115, 72, 16, 1);
 $secondary-color-950: rgba(67, 38, 5, 1);
 
 $typo-color-50: rgba(245, 246, 246, 1);
-$typo-color-10: rgba(229, 231, 232, 1);
-$typo-color-20: rgba(206, 208, 211, 1);
-$typo-color-30: rgba(172, 176, 180, 1);
-$typo-color-40: rgba(130, 136, 142, 1);
-$typo-color-50: rgba(103, 109, 115, 1);
-$typo-color-60: rgba(83, 87, 92, 1);
-$typo-color-70: rgba(75, 78, 83, 1);
-$typo-color-80: rgba(66, 68, 72, 1);
-$typo-color-90: rgba(58, 59, 63, 1);
+$typo-color-100: rgba(229, 231, 232, 1);
+$typo-color-200: rgba(206, 208, 211, 1);
+$typo-color-300: rgba(172, 176, 180, 1);
+$typo-color-400: rgba(130, 136, 142, 1);
+$typo-color-500: rgba(103, 109, 115, 1);
+$typo-color-600: rgba(83, 87, 92, 1);
+$typo-color-700: rgba(75, 78, 83, 1);
+$typo-color-800: rgba(66, 68, 72, 1);
+$typo-color-900: rgba(58, 59, 63, 1);
 $typo-color-950: rgba(36, 38, 40, 1);
 
 /* Break points */
-$tiny-number: 1/16 * 1rem;
+$tiny-number: calc(1/16) * 1rem;
 $breakpoints: (
   'large': 64em,
   'medium': 46.25em,
 );
 
 /* Typography styles */
+$conversionRatioSpToRemWeb: calc(1/16);
+$conversionRatioRemToPxWeb: 16.0; 
+
 $font-weight-thin:    100;
 $font-weight-light:   300;
 $font-weight-regular: 400;
 $font-weight-medium:  500;
 $font-weight-bold:    700;
 $font-weight-black:   900;
+
+/* Border styles */
+$border-radius-xl: 1.5rem;
+$border-radius-lg: 1rem;
+$border-radius-md: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-xs: 0.25rem;
+

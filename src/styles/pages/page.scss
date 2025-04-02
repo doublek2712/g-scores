@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+$page-padding: 2rem;
+
+.page {
+  flex: 1;
+
+  padding: $page-padding;
+
+  background-color: $typo-color-50;
+}
+
+.page h1{
+  @include typo(24, $font-weight-medium, -1.5)
+}
