@@ -1,0 +1,54 @@
+/* Color styles */
+$base-color-light: rgba(255, 255, 255, 1);
+$base-color-dark: rgba(21, 23, 24, 1);
+
+$primary-color-50: rgba(232, 243, 255, 1);
+$primary-color-100: rgba(213, 233, 255, 1);
+$primary-color-200: rgba(180, 213, 255, 1);
+$primary-color-300: rgba(135, 183, 255, 1);
+$primary-color-400: rgba(88, 138, 255, 1);
+$primary-color-500: rgba(50, 94, 255, 1);
+$primary-color-600: rgba(15, 46, 255, 1);
+$primary-color-700: rgba(5, 34, 253, 1);
+$primary-color-800: rgba(8, 33, 203, 1);
+$primary-color-900: rgba(15, 34, 137, 1);
+$primary-color-950: rgba(10, 21, 92, 1);
+
+$secondary-color-50: rgba(254, 254, 232, 1);
+$secondary-color-10: rgba(254, 255, 194, 1);
+$secondary-color-20: rgba(255, 253, 135, 1);
+$secondary-color-30: rgba(255, 244, 67, 1);
+$secondary-color-40: rgba(255, 229, 16, 1);
+$secondary-color-50: rgba(249, 212, 3, 1);
+$secondary-color-60: rgba(206, 159, 0, 1);
+$secondary-color-70: rgba(164, 114, 4, 1);
+$secondary-color-800: rgba(136, 89, 11, 1);
+$secondary-color-900: rgba(115, 72, 16, 1);
+$secondary-color-950: rgba(67, 38, 5, 1);
+
+$typo-color-50: rgba(245, 246, 246, 1);
+$typo-color-10: rgba(229, 231, 232, 1);
+$typo-color-20: rgba(206, 208, 211, 1);
+$typo-color-30: rgba(172, 176, 180, 1);
+$typo-color-40: rgba(130, 136, 142, 1);
+$typo-color-50: rgba(103, 109, 115, 1);
+$typo-color-60: rgba(83, 87, 92, 1);
+$typo-color-70: rgba(75, 78, 83, 1);
+$typo-color-80: rgba(66, 68, 72, 1);
+$typo-color-90: rgba(58, 59, 63, 1);
+$typo-color-950: rgba(36, 38, 40, 1);
+
+/* Break points */
+$tiny-number: 1/16 * 1rem;
+$breakpoints: (
+  'large': 64em,
+  'medium': 46.25em,
+);
+
+/* Typography styles */
+$font-weight-thin:    100;
+$font-weight-light:   300;
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-bold:    700;
+$font-weight-black:   900;
