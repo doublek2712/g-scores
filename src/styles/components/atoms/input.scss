@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+$input-padding-x: 2.5rem;
+$input-padding-y: 0.5rem;
+$input-icon-size: 1rem;
+
+$input-min-width: 8rem;
+
+.input{
+  min-width: $input-min-width;
+  width: 100%;
+
+  padding: $input-padding-y $input-padding-x;
+
+  border: $border-style-common;
+  border-radius: $border-radius-md;
+
+  @extend .t-body-md;
+
+  overflow: hidden;
+
+  &:focus{
+    outline-style: none;
+    border: 1px solid $primary-color-400;
+  }
+
+  &__container{
+    position: relative;
+  }
+  &__left, &__right{
+    position: absolute;
+    top: 50%;
+    $tw-translate-y: calc(calc(1 / 2* 100%)* -1);
+    translate: 0 $tw-translate-y;
+
+    color: $gray-color-400;
+
+    & * {
+      width: $input-icon-size;
+      height: $input-icon-size;
+      font-size: $input-icon-size;
+    }
+  }
+  &__left{
+    left: calc($input-padding-x - $input-icon-size - 0.5rem);
+  }
+  &__right{
+    right: calc($input-padding-x - $input-icon-size - 0.5rem);
+  }
+}

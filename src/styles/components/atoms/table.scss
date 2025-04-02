@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+.table__container{
+  border: $border-style-common;
+  border-radius: $border-radius-lg;
+
+  overflow: hidden;
+}
+.table__x-scrollable-container{
+  max-width: 100%;
+  overflow-x: auto;
+
+  @extend %custom-scrollbar;
+}
+.table{
+  width: 100%;
+
+  @extend .t-body-md;
+  color: $gray-color-900;
+
+  background-color: $base-color-light;
+
+  border-spacing: 0;
+}
+
+.table thead{
+  @extend .t-subtitle2;
+  color: $gray-color-600;
+  font-weight: $font-weight-medium;
+
+  background-color: $gray-color-50;
+}
+.table tbody{
+
+}
+.table tr{
+  &:hover{
+    background-color: rgba($gray-color-50, 0.6);
+  }
+}
+.table td{
+  border-bottom: $border-style-common;
+  padding: 0.5rem 1rem ;
+}

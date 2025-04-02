@@ -4,11 +4,12 @@ $sidebar-width: 20rem;
 $sidebar-padding-hoz: 1.5rem;
 $sidebar-padding-ver: 2rem; 
 $sidebar-element-gap: 2rem;
-$sidebar-border: 1px solid $typo-color-100;
 
 $sidebar-logo-width: 9rem;
 
 .sidebar {
+  position: static;
+
   display: flex;
   flex-direction: column;
   gap: $sidebar-element-gap;
@@ -16,10 +17,12 @@ $sidebar-logo-width: 9rem;
 
   width: $sidebar-width;
   height: 100vh;
+
+  background-color: $base-color-light;
   
   padding: $sidebar-padding-ver $sidebar-padding-hoz;
 
-  border-right: $sidebar-border;
+  border-right: $border-style-common;
 
   & #logo{
     width: $sidebar-logo-width;

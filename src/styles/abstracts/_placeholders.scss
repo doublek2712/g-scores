@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+%bentobox-container{
+  background-color: $base-color-light;
+  
+  padding: 2rem;
+
+  border: $border-style-common;
+  border-radius: $border-radius-lg;
+}
+
+%custom-scrollbar{
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: $border-radius-full;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-radius-full;
+    background-color: $gray-color-200;
+  }
+}

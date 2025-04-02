@@ -27,17 +27,17 @@ $secondary-color-800: rgba(136, 89, 11, 1);
 $secondary-color-900: rgba(115, 72, 16, 1);
 $secondary-color-950: rgba(67, 38, 5, 1);
 
-$typo-color-50: rgba(245, 246, 246, 1);
-$typo-color-100: rgba(229, 231, 232, 1);
-$typo-color-200: rgba(206, 208, 211, 1);
-$typo-color-300: rgba(172, 176, 180, 1);
-$typo-color-400: rgba(130, 136, 142, 1);
-$typo-color-500: rgba(103, 109, 115, 1);
-$typo-color-600: rgba(83, 87, 92, 1);
-$typo-color-700: rgba(75, 78, 83, 1);
-$typo-color-800: rgba(66, 68, 72, 1);
-$typo-color-900: rgba(58, 59, 63, 1);
-$typo-color-950: rgba(36, 38, 40, 1);
+$gray-color-50: rgba(246, 247, 249, 1);
+$gray-color-100: rgba(236, 238, 242, 1);
+$gray-color-200: rgba(213, 217, 226, 1);
+$gray-color-300: rgba(177, 187, 200, 1);
+$gray-color-400: rgba(134, 149, 170, 1);
+$gray-color-500: rgba(100, 116, 139, 1);
+$gray-color-600: rgba(82, 96, 119, 1);
+$gray-color-700: rgba(67, 78, 97, 1);
+$gray-color-800: rgba(58, 66, 82, 1);
+$gray-color-900: rgba(52, 58, 70, 1);
+$gray-color-950: rgba(35, 39, 46, 1);
 
 /* Break points */
 $tiny-number: calc(1/16) * 1rem;
@@ -58,9 +58,14 @@ $font-weight-bold:    700;
 $font-weight-black:   900;
 
 /* Border styles */
-$border-radius-xl: 1.5rem;
-$border-radius-lg: 1rem;
-$border-radius-md: 0.5rem;
-$border-radius-sm: 0.25rem;
-$border-radius-xs: 0.25rem;
+$border-radius-xl:    1.5rem;
+$border-radius-lg:    1rem;
+$border-radius-md:    0.5rem;
+$border-radius-sm:    0.25rem;
+$border-radius-xs:    0.25rem;
+$border-radius-full:  9999rem;
 
+$border-style-common: 1px solid $gray-color-100;
+
+/* Spacing */
+$layout-gap: 1rem;

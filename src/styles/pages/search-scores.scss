@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+.search-scores__container{
+  display: flex;
+  gap: $layout-gap;
+
+  & .search-scores__first-ele,.search-scores__second-ele{
+    display: flex;
+    flex-direction: column;
+    gap: $layout-gap;
+  }
+  & .search-scores__first-ele{
+    width: calc(70% - $layout-gap);
+  }
+
+  & .search-scores__second-ele{
+    flex: 1;
+  }
+
+}

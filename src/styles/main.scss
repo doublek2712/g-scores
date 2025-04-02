@@ -2,14 +2,23 @@
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/utility';
 
+@import 'layout/element-group.scss';
 @import 'layout/root.scss';
 
 @import 'pages/page.scss';
+@import 'pages/search-scores.scss';
 
 @import 'components/atoms/nav-item.scss';
+@import 'components/atoms/input.scss';
+@import 'components/atoms/label.scss';
+@import 'components/atoms/table.scss';
+@import 'components/atoms/button.scss';
+@import 'components/molecules/card.scss';
 @import 'components/molecules/nav-bar.scss';
 @import 'components/organisms/sidebar.scss';

@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 import '@styles/main.scss'
-interface NavBarProps {
+interface INavBarProps {
   children?: React.ReactNode
 }
-const NavBar: FC<NavBarProps> = ({ children, ...rest }) => {
+const NavBar: FC<INavBarProps> = ({ children, ...rest }) => {
   return (
     <nav className='nav-bar' {...rest}>
       {children}

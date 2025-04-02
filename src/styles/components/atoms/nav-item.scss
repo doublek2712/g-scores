@@ -15,7 +15,7 @@
 
   border-radius: $border-radius-md;
 
-  color: $typo-color-900;
+  color: $gray-color-900;
   @extend .t-body-md;
 
   &>svg{
@@ -25,7 +25,7 @@
   }
 
   &:hover{
-    background-color: rgba($typo-color-600, 0.1);
+    background-color: rgba($gray-color-600, 0.1);
     cursor: pointer;
   }
 

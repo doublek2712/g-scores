@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+.card{
+  @extend %bentobox-container;
+}
+
+.card>p{
+  @extend .h6;
+  margin-bottom: 1.5rem;
+}

@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import '@styles/main.scss'
 
-interface SidebarProps {
+interface ISidebarProps {
   logoSrc: string
   children: React.ReactNode,
 }
-const Sidebar: FC<SidebarProps> = ({ logoSrc, children, ...rest }) => {
+const Sidebar: FC<ISidebarProps> = ({ logoSrc, children, ...rest }) => {
   return (
     <aside className="sidebar" {...rest}>
       <img id="logo" src={logoSrc} alt="web's logo" />
