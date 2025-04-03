@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+.reports__container{
+
+  & .reports-chart__container{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+
+    @extend .t-body-md;
+  }
+}

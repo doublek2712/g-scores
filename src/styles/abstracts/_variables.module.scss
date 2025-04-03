@@ -16,13 +16,13 @@ $primary-color-900: rgba(15, 34, 137, 1);
 $primary-color-950: rgba(10, 21, 92, 1);
 
 $secondary-color-50: rgba(254, 254, 232, 1);
-$secondary-color-10: rgba(254, 255, 194, 1);
-$secondary-color-20: rgba(255, 253, 135, 1);
-$secondary-color-30: rgba(255, 244, 67, 1);
-$secondary-color-40: rgba(255, 229, 16, 1);
-$secondary-color-50: rgba(249, 212, 3, 1);
-$secondary-color-60: rgba(206, 159, 0, 1);
-$secondary-color-70: rgba(164, 114, 4, 1);
+$secondary-color-100: rgba(254, 255, 194, 1);
+$secondary-color-200: rgba(255, 253, 135, 1);
+$secondary-color-300: rgba(255, 244, 67, 1);
+$secondary-color-400: rgba(255, 229, 16, 1);
+$secondary-color-500: rgba(249, 212, 3, 1);
+$secondary-color-600: rgba(206, 159, 0, 1);
+$secondary-color-700: rgba(164, 114, 4, 1);
 $secondary-color-800: rgba(136, 89, 11, 1);
 $secondary-color-900: rgba(115, 72, 16, 1);
 $secondary-color-950: rgba(67, 38, 5, 1);
@@ -69,3 +69,28 @@ $border-style-common: 1px solid $gray-color-100;
 
 /* Spacing */
 $layout-gap: 1rem;
+
+:export {
+  primaryColor50: $primary-color-50;
+  primaryColor200: $primary-color-200;
+  primaryColor300: $primary-color-300;
+  primaryColor400: $primary-color-400;
+  primaryColor500: $primary-color-500;
+  primaryColor600: $primary-color-600;
+  primaryColor700: $primary-color-700;
+  primaryColor800: $primary-color-800;
+  primaryColor900: $primary-color-900;
+  primaryColor950: $primary-color-950;
+
+  grayColor50: $gray-color-50;
+  grayColor100: $gray-color-100;
+  grayColor200: $gray-color-200;
+  grayColor300: $gray-color-200;
+  grayColor400: $gray-color-200;
+  grayColor500: $gray-color-200;
+  grayColor600: $gray-color-200;
+  grayColor700: $gray-color-200;
+  grayColor800: $gray-color-200;
+  grayColor900: $gray-color-200;
+  grayColor950: $gray-color-200;
+}

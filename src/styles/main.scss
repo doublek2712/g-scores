@@ -1,5 +1,5 @@
 
-@import 'abstracts/variables';
+@import 'abstracts/variables.module';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
@@ -13,12 +13,15 @@
 
 @import 'pages/page.scss';
 @import 'pages/search-scores.scss';
+@import 'pages/reports.scss';
 
 @import 'components/atoms/nav-item.scss';
 @import 'components/atoms/input.scss';
 @import 'components/atoms/label.scss';
 @import 'components/atoms/table.scss';
+@import 'components/atoms/tab-item.scss';
 @import 'components/atoms/button.scss';
 @import 'components/molecules/card.scss';
+@import 'components/molecules/tabs.scss';
 @import 'components/molecules/nav-bar.scss';
 @import 'components/organisms/sidebar.scss';
