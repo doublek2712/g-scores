@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+.dashboard__container{
+  display: flex;
+  justify-content: center;
+
+  & .ranking{
+    @extend .card;
+    width: 28rem;
+  }
+}

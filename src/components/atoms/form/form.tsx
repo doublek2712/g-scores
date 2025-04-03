@@ -6,7 +6,7 @@ interface IFormProps extends FormHTMLAttributes<HTMLFormElement> {
 }
 const Form: FC<IFormProps> = ({ children, ...rest }) => {
   return (
-    <form>
+    <form {...rest}>
       {children}
     </form>
   )

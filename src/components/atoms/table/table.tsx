@@ -1,8 +1,6 @@
 import { FC, TableHTMLAttributes } from "react"
 import '@styles/main.scss'
 
-const TABLE_DEFAULT_MIN_WIDTH = 1100
-
 interface ITableProps extends TableHTMLAttributes<HTMLTableElement> {
   minWidth?: number,
   children?: React.ReactNode

@@ -1,13 +1,22 @@
 import { FC } from "react"
 import '@styles/main.scss'
+import TabItem from "../../atoms/tab-item/tab-item"
 
 interface ITabsProps {
-  children?: React.ReactNode
+  labels?: string[],
+  active: number,
+  onChange: Function
 }
-const Tabs: FC<ITabsProps> = ({ children, ...rest }) => {
+const Tabs: FC<ITabsProps> = ({ labels, active, onChange, ...rest }) => {
+
   return (
     <div className="tabs" {...rest}>
-      {children}
+      {labels?.map((label, index) => {
+        if (index === active) {
+          return <TabItem label={label} active onClick={() => onChange(index)} />
+        }
+        return <TabItem label={label} onClick={() => onChange(index)} />
+      })}
     </div>
   )
 }

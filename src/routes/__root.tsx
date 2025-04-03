@@ -1,6 +1,6 @@
 import { createRootRoute, Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
-import WebSidebar from '@components/templates/sidebar/sidebar'
+import WebSidebar from '../components/templates/sidebar/sidebar'
 import '@styles/main.scss'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'

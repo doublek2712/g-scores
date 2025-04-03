@@ -1,6 +1,6 @@
 import axios from "axios"
 import { BASE_URL } from "../../lib/constants/server"
-import { SearchType } from "./type"
+import { SearchType, TopScoreType } from "./type"
 
 export const ResultService = {
   getScoresByRegistrationNumber: async (number: string): Promise<SearchType | any> => {
@@ -11,16 +11,18 @@ export const ResultService = {
       .catch((error) => console.error(error.response.data))
   },
   getStatistic: async (): Promise<any> => {
-    return await axios.get(`${BASE_URL}/statistic}`)
+    return await axios.get(`${BASE_URL}/statistic`)
       .then((res) => {
         return res.data
       })
       .catch((error) => console.error(error.response.data))
   },
   getTopInAGroup: async (): Promise<any> => {
-    return await axios.get(`${BASE_URL}/top}`)
+    return await axios.get(`${BASE_URL}/top`)
       .then((res) => {
-        return res.data
+        const realData: TopScoreType[] = res.data
+        realData.sort((a, b) => b.totalScore - a.totalScore)
+        return realData.slice(0, 11)
       })
       .catch((error) => console.error(error.response.data))
   },

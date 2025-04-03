@@ -18,10 +18,11 @@ const SearchScores = () => {
   const [result, setResult] = useState<SearchType>()
 
   const searchMutation = useMutation({
-    mutationKey: ['search-scores'],
+    mutationKey: ['search-scores', searchValue],
     mutationFn: (number: string) => ResultService.getScoresByRegistrationNumber(number),
-    onSuccess: (res) => {
+    onSuccess: (res: SearchType) => {
       setResult(res)
+
     }
   })
 
@@ -81,20 +82,13 @@ const SearchScores = () => {
 
     </Card>
   )
-  const SearchHistory = (
-    <Card title='History'>
 
-    </Card>
-  )
   return (
     <Page title='Search scores'>
       <div className='search-scores__container'>
         <div className='search-scores__first-ele'>
           {UserRegistration}
           {DetailedScores}
-        </div>
-        <div className='search-scores__second-ele'>
-          {SearchHistory}
         </div>
       </div>
 

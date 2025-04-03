@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Page from '../components/templates/page/page'
 
 const Settings = () => {
