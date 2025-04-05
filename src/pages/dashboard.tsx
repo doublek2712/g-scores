@@ -25,7 +25,7 @@ const Dashboard = () => {
             <div>{i._id}</div>
           ))
         }
-      </div>
+      </Card>
     </Page>
   )
 }
