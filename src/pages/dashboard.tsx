@@ -21,7 +21,7 @@ const Dashboard = () => {
     <Page title='Dashboard'>
       <div className='ranking'>
         {topScoresQuery.isPending ? <span>...Loading</span> :
-          topScoresQuery.data ? <span>.Opps</span> : topScoresQuery.data.map((i: TopScoreType) => (
+          !topScoresQuery.data ? <span>.Opps</span> : topScoresQuery.data.map((i: TopScoreType) => (
             <span>{i._id}</span>
           ))
         }
