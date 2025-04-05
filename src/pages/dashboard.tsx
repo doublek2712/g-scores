@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query'
 import { ResultService } from '../services/result/api'
 import '@styles/main.scss'
 import { TopScoreType } from '../services/result/type'
-
+import Card from '../components/molecules/card/card'
 const Dashboard = () => {
 
   const topScoresQuery = useQuery({
@@ -19,10 +19,10 @@ const Dashboard = () => {
   })
   return (
     <Page title='Dashboard'>
-      <div className='ranking'>
+      <Card title="Leaderboard">
         {topScoresQuery.isPending ? <span>...Loading</span> :
           !topScoresQuery.data ? <span>.Opps</span> : topScoresQuery.data.map((i: TopScoreType) => (
-            <span>{i._id}</span>
+            <div>{i._id}</div>
           ))
         }
       </div>
